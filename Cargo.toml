@@ -1,0 +1,20 @@
+[package]
+name = "chess3d"
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.85"
+description = "3D Chess"
+authors = ["Mykhailo Makarov"]
+license = "MIT"
+repository = "https://github.com/makarov-mm"
+
+[dependencies]
+gl = "0.14"
+glutin = "0.32"
+glutin-winit = "0.5"
+raw-window-handle = "0.6"
+winit = "0.30"
+
+[profile.release]
+lto = true
+codegen-units = 1
